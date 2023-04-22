@@ -1,0 +1,28 @@
+.bdc-loader-container{
+  display: flex;
+  align-items: center;
+}
+
+.bdc-loader {
+    width: 24px;
+    height: 24px;
+    border: 5px dotted #6e6e6e;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .bdc-loader-title{
+    margin-left: 2px;
+  }
