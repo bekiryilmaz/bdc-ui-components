@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,
+body,
+#app,
+#app>div {
+  font-size: 12px;
+  overflow: hidden;
+  font-family: Lato, Ubuntu, Segoe UI, Arial, sans-serif;
+
+}
