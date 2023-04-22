@@ -1,7 +1,16 @@
 {
-  "name": "mycomponents",
+  "name": "bdc-ui-components",
+  "description": "some common ui components for web",
+  "author": "Bekir Yılmaz",
   "version": "0.1.1",
-  "private": true,
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist", "README.md" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bekiryilmaz/bdc-ui-components.git"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -15,8 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "del dist && babel src/lib --out-dir dist --copy-files",
+    "test":  "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
