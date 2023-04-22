@@ -1,0 +1,39 @@
+
+:root{
+    --b-button-border-radius:4px;
+    --b-button-background:#eee;
+    --b-button-background-hover:#ddd;
+    --b-button-color:#444;
+    --b-button-font-weight:600;
+}
+
+.bdc-button {
+    padding: 8px;
+    border:1px solid gray;
+    border-radius: var(--b-button-border-radius);
+    cursor: pointer;
+    background-color: var(--b-button-background);
+    color: var(--b-button-color);
+    display: flex;
+    width: fit-content;
+    font-weight: var(--b-button-font-weight);
+    height: 16px;
+    align-items: center;
+}
+
+.bdc-button-icon
+{
+    font-size: 1.25rem;
+    flex: 1;
+}
+
+.bdc-button-title{
+    font-size: 1rem;
+    flex: 4;
+    margin-left: 5px;
+}
+
+.bdc-button:hover{
+    background-color: var(--b-button-background-hover);
+    
+}
